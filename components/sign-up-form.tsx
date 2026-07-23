@@ -44,7 +44,7 @@ export function SignUpForm({
         email,
         password,
         options: {
-          emailRedirectTo: `${window.location.origin}/protected`,
+          emailRedirectTo: `${window.location.origin}/dashboard`,
         },
       });
       if (error) throw error;
@@ -60,8 +60,8 @@ export function SignUpForm({
     <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card>
         <CardHeader>
-          <CardTitle className="text-2xl">Sign up</CardTitle>
-          <CardDescription>Create a new account</CardDescription>
+          <CardTitle className="text-2xl">Create your account</CardTitle>
+          <CardDescription>Start shipping smarter with SwiftShip</CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSignUp}>
